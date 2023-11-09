@@ -1,15 +1,15 @@
 //
 //  ContentView.swift
-//  Fetch iOS Assessment
+//  Recipe App
 //
-//  Created by reed kuivila on 11/5/23.
+//  Created by reed kuivila on 11/7/23.
 //
 
 import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        HomeView()
+        MainView()
     }
 }
 
