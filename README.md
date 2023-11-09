@@ -1,19 +1,18 @@
 # Fetch-iOS-Exercise
 
-This Meal App is a SwiftUI-based iOS app that allows users to browse and search for dessert recipes pulling data from TheMealDB. It provides a user-friendly interface for viewing  details about each dessert which includes ingredients & measurements as well as cooking instructions.
+This Meal App is a SwiftUI-based iOS app that allows users to browse and search for dessert recipes pulling data from TheMealDB. It provides a user-friendly interface for viewing details about each dessert which includes ingredients & measurements as well as cooking instructions.
 
 ![Video](mealAppVid.mp4)
 
-![image](mealapp1.png)
+<img src="mealapp1.png" alt="image" width="200" height="auto">
 
-![image](mealapp2.png)
+<img src="mealapp2.png" alt="image" width="200" height="auto">
 
-![image](mealapp3.png)
+<img src="mealapp3.png" alt="image" width="200" height="auto">
 
-![image](mealapp4.png)
+<img src="mealapp4.png" alt="image" width="200" height="auto">
 
-![image](mealapp5.png)
-
+<img src="mealapp5.png" alt="image" width="200" height="auto">
 
 ## Features
 
@@ -35,13 +34,3 @@ This Meal App is a SwiftUI-based iOS app that allows users to browse and search 
    ```shell
    git clone https://github.com/yourusername/meal-app.git
    cd meal-app
-
-This app utilizes theMoveDB to display a searchable list of deserts to the user.
-
-Each desert has a detail view that shows the dessert's image, ingredients & measurements, and cooking instructions
-
-The detail view utilizes a dynamic background color that adjusts based on the color of the dessert's image to give a more cohesive UI
-
-The user can filter desserts using the search by by typing in keywords. The displayed deserts will match the keyword with the title.
-
-
