@@ -4,7 +4,7 @@ This Meal App is a SwiftUI-based iOS app that allows users to browse and search 
 
 ![Video](mealAppVid.mp4)
 
-![App Screenshots](screenshots.png)
+![image](mealapp1.png)
 
 ## Features
 
