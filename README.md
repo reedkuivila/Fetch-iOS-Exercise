@@ -2,7 +2,7 @@
 
 This Meal App is a SwiftUI-based iOS app that allows users to browse and search for dessert recipes pulling data from TheMealDB. It provides a user-friendly interface for viewing  details about each dessert which includes ingredients & measurements as well as cooking instructions.
 
-![Video](/Users/reedkuivila/desktopAppVid.mp4)
+![Video](reedkuivila/desktopAppVid.mp4)
 
 ![App Screenshots](screenshots.png)
 
