@@ -8,12 +8,14 @@
 
 import SwiftUI
 
+/// A custom view for displaying a single meal and its image (thumbnail) in a row or columns
 struct MealRowView: View {
     var meal: Meal
     
     var body: some View {
         VStack(spacing: 12) {
             if let url = URL(string: meal.strMealThumb) {
+                // Display the meal's image
                 AsyncImage(url: url) { img in
                     img
                         .resizable()
@@ -36,10 +38,12 @@ struct MealRowView: View {
                                 .padding(.bottom, 20)
                         }
                 } placeholder: {
+                    // Display placeholder while loading the image
                     ProgressView()
                         .frame(width: 200, height: 300)
                 }
             } else {
+                // Display placeholder image if the URL is invalid or does not exist
                 Image(systemName: "photo.artframe")
                     .imageScale(.large)
             }
@@ -47,7 +51,6 @@ struct MealRowView: View {
         .padding()
     }
 }
-
 
 struct MealRowView_Previews: PreviewProvider {
     static var previews: some View {

@@ -5,14 +5,14 @@
 //  Created by reed kuivila on 11/7/23.
 //
 
-//MARK: iteration 1
 import Foundation
 
 class MealViewModel: ObservableObject {
     @Published var meals: [Meal] = []
-    let mealService = MealService()
     @Published var selectedMeal: Meal?
-
+    let mealService = MealService()
+    
+    /// Fetch meals from the MealService file
     func fetchMeals() {
         mealService.fetchMeals { fetchedMeals in
             if let fetchedMeals = fetchedMeals {

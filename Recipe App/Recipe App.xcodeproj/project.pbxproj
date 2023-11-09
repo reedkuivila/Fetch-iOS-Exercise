@@ -7,11 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4B542C752AFD7F90002CA293 /* ImageColorExtractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B542C742AFD7F90002CA293 /* ImageColorExtractor.swift */; };
 		4BF179142AFB007600DEB777 /* Recipe_AppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF179132AFB007600DEB777 /* Recipe_AppApp.swift */; };
 		4BF179162AFB007600DEB777 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF179152AFB007600DEB777 /* ContentView.swift */; };
 		4BF179182AFB007700DEB777 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4BF179172AFB007700DEB777 /* Assets.xcassets */; };
 		4BF1791B2AFB007700DEB777 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4BF1791A2AFB007700DEB777 /* Preview Assets.xcassets */; };
-		4BF179252AFB026200DEB777 /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF179242AFB026200DEB777 /* Meal.swift */; };
+		4BF179252AFB026200DEB777 /* MealModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF179242AFB026200DEB777 /* MealModel.swift */; };
 		4BF179272AFB028200DEB777 /* MealViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF179262AFB028200DEB777 /* MealViewModel.swift */; };
 		4BF179292AFB02EA00DEB777 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF179282AFB02EA00DEB777 /* MainView.swift */; };
 		4BF1792B2AFB048100DEB777 /* MealService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF1792A2AFB048100DEB777 /* MealService.swift */; };
@@ -21,12 +22,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4B542C742AFD7F90002CA293 /* ImageColorExtractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageColorExtractor.swift; sourceTree = "<group>"; };
 		4BF179102AFB007600DEB777 /* Recipe App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Recipe App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BF179132AFB007600DEB777 /* Recipe_AppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipe_AppApp.swift; sourceTree = "<group>"; };
 		4BF179152AFB007600DEB777 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		4BF179172AFB007700DEB777 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4BF1791A2AFB007700DEB777 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		4BF179242AFB026200DEB777 /* Meal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meal.swift; sourceTree = "<group>"; };
+		4BF179242AFB026200DEB777 /* MealModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealModel.swift; sourceTree = "<group>"; };
 		4BF179262AFB028200DEB777 /* MealViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealViewModel.swift; sourceTree = "<group>"; };
 		4BF179282AFB02EA00DEB777 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		4BF1792A2AFB048100DEB777 /* MealService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealService.swift; sourceTree = "<group>"; };
@@ -87,7 +89,7 @@
 		4BF179212AFB023D00DEB777 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				4BF179242AFB026200DEB777 /* Meal.swift */,
+				4BF179242AFB026200DEB777 /* MealModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -107,6 +109,7 @@
 			children = (
 				4BF179262AFB028200DEB777 /* MealViewModel.swift */,
 				4BF1792A2AFB048100DEB777 /* MealService.swift */,
+				4B542C742AFD7F90002CA293 /* ImageColorExtractor.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -194,10 +197,11 @@
 				4BF179162AFB007600DEB777 /* ContentView.swift in Sources */,
 				4BF179272AFB028200DEB777 /* MealViewModel.swift in Sources */,
 				4BF1792B2AFB048100DEB777 /* MealService.swift in Sources */,
-				4BF179252AFB026200DEB777 /* Meal.swift in Sources */,
+				4BF179252AFB026200DEB777 /* MealModel.swift in Sources */,
 				4BF1792D2AFB051400DEB777 /* MealDetailView.swift in Sources */,
 				4BF179292AFB02EA00DEB777 /* MainView.swift in Sources */,
 				4BF1792F2AFB06AC00DEB777 /* MealRowView.swift in Sources */,
+				4B542C752AFD7F90002CA293 /* ImageColorExtractor.swift in Sources */,
 				4BF179142AFB007600DEB777 /* Recipe_AppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

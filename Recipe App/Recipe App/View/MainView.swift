@@ -5,48 +5,12 @@
 //  Created by reed kuivila on 11/7/23.
 //
 
-//import SwiftUI
-//
-//struct MainView: View {
-//    @StateObject var viewModel = MealViewModel()
-//
-//    let columns: [GridItem] = [
-//        GridItem(.flexible()),
-//        GridItem(.flexible())
-//    ]
-//
-//    var body: some View {
-//        NavigationStack{
-//            ScrollView {
-//                LazyVGrid(columns: columns, spacing: 1) {
-//                    ForEach(viewModel.meals) { meal in
-//                        NavigationLink(destination: MealDetailView(meal: meal)) {
-//                            MealRowView(meal: meal)
-//                                .frame(maxWidth: .infinity)
-//                        }
-//                    }
-//                }
-//                .padding()
-//                .navigationTitle("Meals")
-//            }
-//            .onAppear {
-//                viewModel.fetchMeals()
-//            }
-//        }
-//    }
-//}
-//
-//struct MainView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        MainView()
-//    }
-//}
-
 import SwiftUI
 
 struct MainView: View {
     @StateObject var viewModel = MealViewModel()
     @State private var searchText = ""
+    @State private var headerHidden = false
 
     let columns: [GridItem] = [
         GridItem(.flexible()),
@@ -56,10 +20,11 @@ struct MainView: View {
     var body: some View {
         NavigationStack {
             VStack {
-                TextField("Try \"Cake\"", text: $searchText)
-                    .textFieldStyle(RoundedBorderTextFieldStyle())
-                    .padding()
 
+                // Page title & search bar
+                MainHeaderView(text: $searchText)
+
+                // Scrollable grid of meals
                 ScrollView {
                     LazyVGrid(columns: columns, spacing: 1) {
                         ForEach(filteredMeals) { meal in
@@ -75,7 +40,6 @@ struct MainView: View {
                     viewModel.fetchMeals()
                 }
             }
-            .navigationTitle("Meals")
         }
     }
 }
@@ -87,17 +51,16 @@ struct MainView_Previews: PreviewProvider {
 }
 
 
+// MARK: MainView Extensions
 extension MainView {
+    /// Filtered meals based on search text
+    /// NB this only filters by the meals name (strMeal)
     var filteredMeals: [Meal] {
         if searchText.isEmpty {
             return viewModel.meals
         } else {
             return viewModel.meals.filter { meal in
-                // Customize the filter condition as needed
-                meal.strMeal.localizedCaseInsensitiveContains(searchText) ||
-                meal.ingredients.contains { ingredient in
-                    ingredient.name.localizedCaseInsensitiveContains(searchText)
-                }
+                meal.strMeal.localizedCaseInsensitiveContains(searchText)
             }
         }
     }

@@ -7,40 +7,55 @@
 
 import SwiftUI
 
+/// A custom header view for the MainView
 struct MainHeaderView: View {
-    @State private var randomImageURL: URL?
-    
+    @Binding var text: String
+
     var body: some View {
-        AsyncImage(
-            url: randomImageURL,
-            content: { image in
-                image
-                    .resizable()
-                    .scaledToFill()
-                    .frame(maxWidth: .infinity)
-            },
-            placeholder: {
-                ProgressView()
-            }
-        )
-        .onAppear {
-            // Fetch a random meal image URL and set it to randomImageURL
-            fetchRandomMealImageURL()
+        VStack(alignment: .leading, spacing: 5) {
+            Text("Find the perfect dessert")
+                .font(.title)
+                .fontWeight(.semibold)
+                .padding(.leading)
+
+            Text("or search for your craving below")
+                .font(.title2)
+                .fontWeight(.semibold)
+                .padding(.leading)
+
+            SearchTextField(text: $text)
         }
     }
-    
-    private func fetchRandomMealImageURL() {
-        // Generate a random meal image URL or use a default URL
-        // You should implement your logic here to get a random meal image URL
-        // For example, you can fetch it from an API
-        // Here, we use a default URL for demonstration purposes
-        randomImageURL = URL(string: "https://www.themealdb.com/images/media/meals/randomImage.jpg")
+}
+
+/// A custom search bar
+struct SearchTextField: View {
+    @Binding var text: String
+
+    var body: some View {
+        HStack {
+            TextField("Try \"cake\"", text: $text)
+                .autocorrectionDisabled(true)
+                .padding(8)
+                .padding(.leading, 24)
+                .background(Color(.gray).opacity(0.1))
+                .cornerRadius(7)
+                .overlay(
+                    HStack {
+                        Image(systemName: "magnifyingglass")
+                            .foregroundColor(.gray)
+                            .frame(minWidth: 0, maxWidth: .infinity, alignment: .leading)
+                            .padding(.leading, 7)
+                    }
+                )
+        }
+        .padding(.leading)
     }
 }
 
 struct MainHeaderView_Previews: PreviewProvider {
     static var previews: some View {
-        MainHeaderView()
+        MainHeaderView(text: .constant(""))
+            .previewLayout(.sizeThatFits)
     }
 }
-
