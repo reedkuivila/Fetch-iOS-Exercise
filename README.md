@@ -4,15 +4,13 @@ This Meal App is a SwiftUI-based iOS app that allows users to browse and search 
 
 ![Video](mealAppVid.mp4)
 
-<img src="mealapp1.png" alt="image" width="200" height="auto">
-
-<img src="mealapp2.png" alt="image" width="200" height="auto">
-
-<img src="mealapp3.png" alt="image" width="200" height="auto">
-
-<img src="mealapp4.png" alt="image" width="200" height="auto">
-
-<img src="mealapp5.png" alt="image" width="200" height="auto">
+<div style="display: flex; flex-direction: row; justify-content: center; align-items: center;">
+    <img src="mealapp1.png" alt="image" width="200" height="auto">
+    <img src="mealapp2.png" alt="image" width="200" height="auto">
+    <img src="mealapp3.png" alt="image" width="200" height="auto">
+    <img src="mealapp4.png" alt="image" width="200" height="auto">
+    <img src="mealapp5.png" alt="image" width="200" height="auto">
+</div>
 
 ## Features
 
