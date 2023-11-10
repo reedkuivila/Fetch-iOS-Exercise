@@ -18,16 +18,4 @@ This Meal App is a SwiftUI-based iOS app that allows users to browse and search 
 - View detailed information about each dessert including instructions, ingredients, and measurements.
 - Dynamic background coloring to match the color of the dessert on the detail page
 
-## Requirements
 
-- Xcode 14.3+
-- Swift 5+
-- iOS 16.4+
-
-## Getting Started
-
-1. Clone the repository:
-
-   ```shell
-   git clone https://github.com/yourusername/meal-app.git
-   cd meal-app
