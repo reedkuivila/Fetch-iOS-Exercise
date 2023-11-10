@@ -1,17 +1,26 @@
 # Fetch-iOS-Exercise
 
-This Meal App is a SwiftUI-based iOS app that allows users to browse and search for dessert recipes pulling data from TheMealDB. It provides a user-friendly interface for viewing  details about each dessert which includes ingredients & measurements as well as cooking instructions.
+This Meal App is a SwiftUI-based iOS app that allows users to browse and search for dessert recipes pulling data from TheMealDB. It provides a user-friendly interface for viewing details about each dessert which includes ingredients & measurements as well as cooking instructions.
 
-![Video](/Users/reedkuivila/documents/github/Fetch-iOS-Exercisedesktop/AppVid.mp4)
+<video width="320" height="240" controls autoplay loop>
+  <source src="mealAppVid.mp4" type="video/mp4">
+</video>
 
-![App Screenshots](screenshots.png)
+
+<div style="display: flex; flex-direction: row; justify-content: center; align-items: center;">
+    <img src="mealapp3.png" alt="image" width="175" height="auto">
+    <img src="mealapp4.png" alt="image" width="175" height="auto">
+    <img src="mealapp5.png" alt="image" width="175" height="auto">
+    <img src="mealapp1.png" alt="image" width="175" height="auto">
+    <img src="mealapp2.png" alt="image" width="175" height="auto">
+</div>
 
 ## Features
 
-- Browse a list of meal recipes.
-- Search for meals by name.
-- View detailed information about each meal.
-- Easily customize and extend the app.
+- Browse a list of dessert recipes.
+- Search for desserts by name.
+- View detailed information about each dessert including instructions, ingredients, and measurements.
+- Dynamic background coloring to match the color of the dessert on the detail page
 
 ## Requirements
 
@@ -26,13 +35,3 @@ This Meal App is a SwiftUI-based iOS app that allows users to browse and search 
    ```shell
    git clone https://github.com/yourusername/meal-app.git
    cd meal-app
-
-This app utilizes theMoveDB to display a searchable list of deserts to the user.
-
-Each desert has a detail view that shows the dessert's image, ingredients & measurements, and cooking instructions
-
-The detail view utilizes a dynamic background color that adjusts based on the color of the dessert's image to give a more cohesive UI
-
-The user can filter desserts using the search by by typing in keywords. The displayed deserts will match the keyword with the title.
-
-
