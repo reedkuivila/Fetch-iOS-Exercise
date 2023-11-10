@@ -17,10 +17,10 @@ This Meal App is a SwiftUI-based iOS app that allows users to browse and search 
 
 ## Features
 
-- Browse a list of meal recipes.
-- Search for meals by name.
-- View detailed information about each meal.
-- Easily customize and extend the app.
+- Browse a list of dessert recipes.
+- Search for desserts by name.
+- View detailed information about each dessert including instructions, ingredients, and measurements.
+- Dynamic background coloring to match the color of the dessert on the detail page
 
 ## Requirements
 
